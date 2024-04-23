@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 
-const API = axios.create({baseURL: 'http://127.0.0.1:5000'})
+// const API = axios.create({baseURL: 'http://127.0.0.1:5000'})
+const API = axios.create({baseURL: 'https://hris-personal-project.onrender.com'})
 
 export const login = (email: string, password: string) => API.post('/user/login', {email, password});
 

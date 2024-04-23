@@ -36,7 +36,7 @@ export const CREATE_LEAVE = createAsyncThunk(
     try {
       // Auth HTTP PATCH request for getting current user
       const response = await axios.post(
-        "http://127.0.0.1:5000/user/leave",
+        "https://hris-personal-project.onrender.com/user/leave",
         credentials,
         {
           headers: {
@@ -66,7 +66,7 @@ export const GETTING_ALL_LEAVE = createAsyncThunk(
   async (credentials, thunkAPI) => {
     try {
       // Auth HTTP PATCH request for getting current user
-      const response = await axios.get("http://127.0.0.1:5000/user/leave");
+      const response = await axios.get("https://hris-personal-project.onrender.com/user/leave");
 
       if (response) {
         const leave = await response.data.data.leaves;
@@ -90,7 +90,7 @@ export const UPDATE_LEAVE = createAsyncThunk(
     try {
       // Auth HTTP PATCH request for getting current user
       const response = await axios.patch(
-        `http://127.0.0.1:5000/user/leave/${credentials.id}`,
+        `https://hris-personal-project.onrender.com/user/leave/${credentials.id}`,
         {status: credentials.status},
         {
           headers: {

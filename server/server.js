@@ -28,6 +28,12 @@ mongoose.connect(DB, {
 
 
 // Listening to server
+
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
+
+  
 const server = app.listen(PORT, () => {
     console.log(`Server is listening at port ${PORT}`)
 })

@@ -18,7 +18,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { GETTING_ALL_LEAVE, UPDATE_LEAVE } from "../../store/leaveSlice";
 import { useState } from "react";
 import Loader from "../loader/loader";
-import { GET_CURRENT_USER } from "../../store/authSlice";
+
 
 interface Column {
   id:

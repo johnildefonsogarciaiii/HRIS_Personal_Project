@@ -29,7 +29,7 @@ export const login = createAsyncThunk(
     try {
       // Auth HTTP POST request for login
       const response = await axios.post(
-        "http://127.0.0.1:5000/user/login",
+        "https://hris-personal-project.onrender.com/user/login",
         credentials
       );
 
@@ -54,7 +54,7 @@ export const signup = createAsyncThunk(
     try {
       // Auth HTTP POST request for signup
       const response = await axios.post(
-        "http://127.0.0.1:5000/user/signup",
+        "https://hris-personal-project.onrender.com/user/signup",
         credentials
       );
 
@@ -91,7 +91,7 @@ export const PERSONAL_INFO_UPDATE = createAsyncThunk(
     try {
       // Auth HTTP PATCH request for updating user personal information
       const response = await axios.patch(
-        "http://127.0.0.1:5000/user/update-current-user",
+        "https://hris-personal-project.onrender.com/user/update-current-user",
         credentials,
         {headers: {
             Authorization: `Bearer ${token}`,
@@ -130,7 +130,7 @@ export const EMPLOYMENT_INFO_UPDATE = createAsyncThunk(
     try {
       // Auth HTTP PATCH request for updating user personal information
       const response = await axios.patch(
-        "http://127.0.0.1:5000/user/update-current-user",
+        "https://hris-personal-project.onrender.com/user/update-current-user",
         credentials,
         {headers: {
             Authorization: `Bearer ${token}`,
@@ -170,7 +170,7 @@ export const CONTACT_INFO_UPDATE = createAsyncThunk(
     try {
       // Auth HTTP PATCH request for updating user personal information
       const response = await axios.patch(
-        "http://127.0.0.1:5000/user/update-current-user",
+        "https://hris-personal-project.onrender.com/user/update-current-user",
         credentials,
         {headers: {
             Authorization: `Bearer ${token}`,
@@ -199,7 +199,7 @@ export const GET_CURRENT_USER = createAsyncThunk(
     try {
       // Auth HTTP PATCH request for getting current user
       const response = await axios.get(
-        "http://127.0.0.1:5000/user/me",
+        "https://hris-personal-project.onrender.com/user/me",
         {headers: {
             Authorization: `Bearer ${token}`,
           }}

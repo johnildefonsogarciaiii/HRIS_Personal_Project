@@ -29,7 +29,7 @@ export const GET_CURRENT_USER = createAsyncThunk(
       try {
         // Auth HTTP PATCH request for getting current user
         const response = await axios.get(
-          "http://127.0.0.1:5000/user/me",
+          "https://hris-personal-project.onrender.com/user/me",
           {headers: {
               Authorization: `Bearer ${token}`,
             }}
